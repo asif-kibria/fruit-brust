@@ -41,25 +41,31 @@
     <!-- Header Section -->
     <header class="font-lato">
         <!-- Navbar Section -->
-        <nav class="navbar max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10 bg-[#F85559] rounded-[600px] ">
-            <div class="flex justify-start-right  text-lg text-white font-normal gap-7 flex-1">
-                <a href="">Home</a>
-                <a href="">About Us</a>
-                <a href="">Shop</a>
-                <a href="">All Fruits</a>
+        <div class="navbar max-w-screen-xl mx-auto my-10 py-5 rounded-full bg-[#F85559]">
+            
+            <div class="navbar-start pl-4 gap-5 text-lg  text-[#FFF]  ">
+              <a href="">Home</a>
+              <a href="">About Us</a>
+              <a href="">Shop</a>
+              <a href="">All Fruits</a>
             </div>
-            <div class="gap-2 justify-center flex-1">
-                <img class="w-12" src="./images/logo.png" alt="">
-                <h2 class="text-4xl font-bold text-white">Fruit Burst</h2>
+            
+            <div class="navbar-center flex gap-3">
+              <img class="w-[20%]" src="./images/logo.png" alt="">
+              <h1 class="text-3xl font-semibold text-[#FFF]">Fruit Burst</h1>
             </div>
-            <div class="flex justify-end flex-1 ">
-                <div class="">
-                    <input type="text" placeholder="Search here  " class="input rounded-[50px]  " />
-                </div>
-
+            
+            <div class="navbar-end relative">
+                <div class="mr-4">
+                    <input type="text" placeholder="Search Here " class="input rounded-full w-[350px]  " />
+                  </div>
+              <button class="absolute btn btn-ghost btn-circle  right-5 ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+              </button>
+              
+              
             </div>
-
-        </nav>
+          </div>
         <!-- Banner Section -->
         <section class=" max-w-screen-xl mx-auto my-10">
             <div class="">
@@ -633,4 +639,24 @@
 
 </body>
 
-</html>
+</html> 
+
+<nav class="navbar max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10 bg-[#F85559] rounded-[600px] ">
+    <div class="flex justify-start-right  text-lg text-white font-normal gap-7 flex-1">
+        <a href="">Home</a>
+        <a href="">About Us</a>
+        <a href="">Shop</a>
+        <a href="">All Fruits</a>
+    </div>
+    <div class="gap-2 justify-center flex-1">
+        <img class="w-12" src="./images/logo.png" alt="">
+        <h2 class="text-4xl font-bold text-white">Fruit Burst</h2>
+    </div>
+    <div class="flex justify-end flex-1 ">
+        <div class="">
+            <input type="text" placeholder="Search here  " class="input rounded-[50px]  " />
+        </div>
+
+    </div>
+
+</nav>
