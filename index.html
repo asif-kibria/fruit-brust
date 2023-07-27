@@ -169,10 +169,10 @@
     <main>
         <!-- Deal Section -->
         <section class="max-w-screen-xl mx-auto">
-            <div class="flex justify-between">
+            <div class="flex flex-col md:flex-row lg:flex-row justify-between">
                 <div>
-                    <h2 class="text-5xl text-black font-bold">Deal of the day</h2>
-                    <p class="text-[#12121299] mt-4">Contrary to popular belief, is not simply random text. It has roots
+                    <h2 class="text-5xl text-black font-bold mb-5">Deal of the day</h2>
+                    <p class="text-[#12121299] mt-4 mb-5">Contrary to popular belief, is not simply random text. It has roots
                         in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
                 <div>
@@ -181,25 +181,26 @@
                             <span class="countdown font-mono text-5xl">
                                 <span style="--value:15;"></span>
                             </span>
-                            days
+                            Days 
                         </div>
+                   
                         <div class="flex flex-col">
                             <span class="countdown font-mono text-5xl">
                                 <span style="--value:10;"></span>
                             </span>
-                            hours
+                            Hours 
                         </div>
                         <div class="flex flex-col">
                             <span class="countdown font-mono text-5xl">
                                 <span style="--value:24;"></span>
                             </span>
-                            min
+                            Min 
                         </div>
                         <div class="flex flex-col">
                             <span class="countdown font-mono text-5xl">
                                 <span style="--value:34;"></span>
                             </span>
-                            sec
+                            Sec
                         </div>
                     </div>
                 </div>
@@ -207,13 +208,14 @@
             <!-- Cards -->
 
             <!-- 1 -->
-            <div class="flex justify-center flex-col lg:flex-row">
-                <div class="card ">
-                    <figure class="px-10 pt-10">
+            <div class="flex gap-6 mb-10 justify-center flex-col md:flex-col lg:flex-row">
+                <div class="card border border-stone-200 p-8  ">
+                    <figure class="">
                         <img src="./images/fruit6.png" alt="" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-2xl font-semibold text-black">12.90$ - 18.85$</h2>
+                        
                         <p class="font-medium text-[#12121299]">Apple</p>
                         <div class="rating">
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -254,12 +256,13 @@
                     </div>
                 </div>
                 <!-- 2 -->
-                <div class="card">
-                    <figure class="px-10 pt-10">
+                <div class="card border border-stone-200 p-8">
+                    <figure class="">
                         <img src="./images/fruit7.png" alt="" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-2xl font-semibold text-black">12.90$ - 18.85$</h2>
+                        
                         <p class="font-medium text-[#12121299]">Orange</p>
                         <div class="rating">
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -299,8 +302,8 @@
                 </div>
 
                 <!-- 3 -->
-                <div class="card ">
-                    <figure class="px-10 pt-10">
+                <div class="card border border-stone-200 p-8 ">
+                    <figure class="">
                         <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
@@ -314,8 +317,8 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <!-- Open the modal using ID.showModal() method -->
-                        <button class="btn btn-ghost text-[#F85559]" onclick="my_modal_1.showModal()">Details</button>
-                        <dialog id="my_modal_1" class="modal">
+                        <button class="btn btn-ghost text-[#F85559]" onclick="my_modal_3.showModal()">Details</button>
+                        <dialog id="my_modal_3" class="modal">
                             <form method="dialog" class="modal-box">
                                 <div class="flex justify-center mt-2">
                                     <img class="mt-2" src="./images/fruit8.png" alt="">
@@ -344,8 +347,8 @@
                     </div>
                 </div>
                 <!-- 4 -->
-                <div class="card ">
-                    <figure class="px-10 pt-10">
+                <div class="card border border-stone-200 p-8">
+                    <figure class="">
                         <img src="./images/fruit9.png" alt="" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
@@ -359,8 +362,8 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <!-- Open the modal using ID.showModal() method -->
-                        <button class="btn btn-ghost text-[#F85559]" onclick="my_modal_2.showModal()">Details</button>
-                        <dialog id="my_modal_2" class="modal">
+                        <button class="btn btn-ghost text-[#F85559]" onclick="my_modal_4.showModal()">Details</button>
+                        <dialog id="my_modal_4" class="modal">
                             <form method="dialog" class="modal-box">
                                 <div class="flex justify-center mt-2">
                                     <img src="./images/fruit9.png" alt="">
@@ -382,19 +385,11 @@
                                         class="btn btn-ghost bg-white text-[#F85559] border border-orange-400">Close</button>
                                     <button class="btn btn-ghost bg-[#F85559] text-white">Buy Now</button>
                                 </div>
-
                             </form>
                         </dialog>
-
-
                     </div>
                 </div>
-
-
             </div>
-
-
-
             <!-- Button -->
             <div class="flex justify-center">
                 <button class="btn btn-error bg-[#F85559] text-white">Shop All</button>
@@ -402,7 +397,9 @@
         </section>
         <!-- Team Section -->
         <section class="max-w-screen-xl mx-auto my-10 ">
-            <div class="hero  px-8 md:px-16 lg:px-24 py-12 bg-section-bg ">
+            <div class="hero px-8 md:px-16 lg:px-24 py-12 bg-section-bg ">
+                <!--  -->
+               
                 <div class="hero-content text-center">
                     <div class="">
                         <h1 class="text-5xl font-extrabold text-white">Meet the team section</h1>
@@ -508,14 +505,14 @@
                     </div>
         </section>
         <!-- Choose Section -->
-        <section class="max-w-screen-xl mx-auto px-8  py-5 my-10">
+        <section class="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-8  py-5 my-10">
             <div class="text-center mb-10">
                 <h1 class="text-5xl font-extrabold text-[#121212] mb-8">Why Choose Us</h1>
                 <p class="font-medium text-[#12121299] ">Contrary to popular belief, is not simply random text. It has
                     roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
             <!-- Details -->
-            <div class="flex gap-24 ">
+            <div class="flex flex-col md:flex-row lg:flex-row gap-24 ">
                 <!-- Left -->
                 <div>
                     <div class="flex gap-6 mb-10">
@@ -557,15 +554,15 @@
 
                 </div>
                 <!-- Middle -->
-                <div>
-            <img class="h-[100%] w-[100%] " src="./images/whychoose1.png" alt="">
+                <div class="">
+            <img class="md:h-[100%] lg:h-100"  src="./images/whychoose1.png" alt="">
                 </div>
                 <!-- Right -->
                 <div>
-                    <div class="flex gap-6 mb-10">
+                    <div class="flex  gap-6 mb-10">
                         <div>
-                            <h2 class="text-2xl font-extrabold text-[#121212] mb-2">Integrated Supplier</h2>                       
-                            <hr class="w-[40%]  ">
+                            <h2 class="text-2xl  font-extrabold text-[#121212] mb-2">Integrated Supplier</h2>                       
+                            <hr class="w-[40%]">
                             <p class="font-medium text-[#12121299] mt-2">Professional employees are there for you to
                                 pick the most amazing fresh fruits.</p>
                         </div>
@@ -619,7 +616,7 @@
             </p>
         </div>
 
-        <div class="flex justify-center text-base font-medium text-white gap-8">
+        <div class="flex flex-wrap justify-center text-base font-medium text-white gap-8">
             <a>Home</a>
             <a>About Us</a>
             <a>Shop</a>
